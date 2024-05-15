@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Gm-ICP-backend": {
+      "main": "src/Gm-ICP-backend/main.mo",
+      "type": "motoko"
+    },
+    "Gm-ICP-frontend": {
+      "dependencies": [
+        "Gm-ICP-backend"
+      ],
+      "source": [
+        "src/Gm-ICP-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Gm-ICP-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
